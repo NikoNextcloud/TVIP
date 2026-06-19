@@ -20,6 +20,11 @@ const MIME_TYPES = {
   '.ico': 'image/x-icon',
 };
 
+function normalizeMediaUrl(rawUrl, baseUrl) {
+  const cleaned = String(rawUrl || '').trim().replace(/^location:\s*/i, '');
+  return new URL(cleaned, baseUrl).toString();
+}
+
 function send(res, status, body, headers = {}) {
   res.writeHead(status, {
     'Access-Control-Allow-Origin': '*',
@@ -30,7 +35,7 @@ function send(res, status, body, headers = {}) {
 }
 
 function proxyUrl(rawUrl, baseUrl) {
-  const absolute = new URL(rawUrl, baseUrl).toString();
+  const absolute = normalizeMediaUrl(rawUrl, baseUrl);
   return `/proxy?url=${encodeURIComponent(absolute)}`;
 }
 
@@ -46,15 +51,23 @@ function handleProxy(req, res, requestUrl) {
   const target = requestUrl.searchParams.get('url');
   if (!target) return send(res, 400, 'Missing url');
 
+  proxyRequest(target, res, 0);
+}
+
+function proxyRequest(target, res, redirectCount) {
   let parsed;
   try {
-    parsed = new URL(target);
+    parsed = new URL(normalizeMediaUrl(target));
   } catch (error) {
     return send(res, 400, 'Invalid url');
   }
 
   if (parsed.protocol !== 'http:' && parsed.protocol !== 'https:') {
     return send(res, 400, 'Only http and https are allowed');
+  }
+
+  if (redirectCount > 5) {
+    return send(res, 508, 'Too many redirects');
   }
 
   const client = parsed.protocol === 'https:' ? https : http;
@@ -64,6 +77,17 @@ function handleProxy(req, res, requestUrl) {
       'Accept': '*/*',
     },
   }, (upstreamRes) => {
+    if (
+      upstreamRes.statusCode >= 300 &&
+      upstreamRes.statusCode < 400 &&
+      upstreamRes.headers.location
+    ) {
+      upstreamRes.resume();
+      const nextUrl = normalizeMediaUrl(upstreamRes.headers.location, parsed.toString());
+      proxyRequest(nextUrl, res, redirectCount + 1);
+      return;
+    }
+
     const contentType = upstreamRes.headers['content-type'] || '';
     const looksLikePlaylist = /\.m3u8?($|\?)/i.test(parsed.pathname) || contentType.includes('mpegurl');
 
