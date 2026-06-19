@@ -281,7 +281,7 @@ function playChannel(channel) {
 
   destroyPlayer();
 
-  const url = channel.url || AUTHORIZED_HLS_URL;
+  const url = makePlaybackUrl(channel.url || AUTHORIZED_HLS_URL);
   const isHls = /\.m3u8($|\?)/i.test(url);
   const isProgressiveFile = /\.(mp4|webm|ogv|mov|mkv)($|\?)/i.test(url);
 
@@ -358,6 +358,11 @@ function destroyPlayer() {
 function showPlayerError(msg) {
   els.playerError.hidden = false;
   els.playerError.textContent = msg;
+}
+
+function makePlaybackUrl(url) {
+  const needsProxy = location.protocol === 'https:' && /^http:\/\//i.test(url);
+  return needsProxy ? '/proxy?url=' + encodeURIComponent(url) : url;
 }
 
 function escapeHtml(s) {
