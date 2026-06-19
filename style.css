@@ -139,6 +139,38 @@ select:focus, input[type="text"]:focus {
   padding: 16px 8px;
 }
 
+.category-tabs {
+  display: flex;
+  gap: 6px;
+  padding: 0 0 10px;
+  margin-bottom: 8px;
+  overflow-x: auto;
+  border-bottom: 1px solid var(--border);
+}
+
+.category-tab {
+  flex: 0 0 auto;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  color: var(--muted);
+  border-radius: 6px;
+  padding: 7px 9px;
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.category-tab:hover,
+.category-tab.active {
+  color: var(--text);
+  border-color: var(--accent);
+}
+
+.category-tab.active {
+  background: rgba(255,90,54,0.1);
+}
+
 .group-block { margin-bottom: 14px; }
 
 .group-title {

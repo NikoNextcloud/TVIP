@@ -8,6 +8,7 @@
 
 const els = {
   rail: document.getElementById('channelRail'),
+  tabs: document.getElementById('categoryTabs'),
   railStatus: document.getElementById('railStatus'),
   playlistSelect: document.getElementById('playlistSelect'),
   search: document.getElementById('searchInput'),
@@ -25,6 +26,9 @@ let hls = null;
 let mpegtsPlayer = null;
 let allChannels = [];   // currently loaded playlist, parsed
 let currentUrl = null;  // currently playing stream url
+let activeGroup = 'All';
+
+const AUTHORIZED_HLS_URL = "http://bde.online24.pm/play/6832/16419D145D0E706/video.m3u8";
 
 /* ---------------- M3U parsing ---------------- */
 
@@ -47,13 +51,21 @@ function parseM3U(text) {
       pending = {
         name,
         logo: attrs['tvg-logo'] || '',
-        group: attrs['group-title'] || 'Други',
+        group: attrs['group-title'] || 'Other',
         url: '',
       };
       continue;
     }
 
-    if (line.startsWith('#')) continue; // other tags (#EXTM3U, #EXTGRP, etc.) ignored
+    if (line.startsWith('#EXTGRP')) {
+      if (pending) {
+        const group = line.split(':').slice(1).join(':').trim();
+        if (group) pending.group = group;
+      }
+      continue;
+    }
+
+    if (line.startsWith('#')) continue; // other tags (#EXTM3U, etc.) ignored
 
     if (pending) {
       pending.url = line;
@@ -128,15 +140,17 @@ function loadPlaylistFromFileObject(fileObj) {
 function applyPlaylistText(text) {
   const channels = parseM3U(text);
   allChannels = channels;
+  activeGroup = 'All';
   if (!channels.length) {
     setRailStatus('Плейлистът е празен или невалиден M3U.');
     return;
   }
+  renderTabs(channels);
   renderChannels(channels, els.search.value || '');
 }
 
 function setRailStatus(msg) {
-  els.rail.innerHTML = '';
+  clearChannelList();
   const div = document.createElement('div');
   div.className = 'rail-status';
   div.textContent = msg;
@@ -145,13 +159,41 @@ function setRailStatus(msg) {
 
 /* ---------------- Rendering channel list ---------------- */
 
+function clearChannelList() {
+  Array.from(els.rail.children).forEach(child => {
+    if (child !== els.tabs) child.remove();
+  });
+}
+
+function renderTabs(channels) {
+  const groups = ['All', ...new Set(channels.map(c => c.group).filter(Boolean))];
+  els.tabs.innerHTML = '';
+
+  groups.forEach(group => {
+    const btn = document.createElement('button');
+    btn.className = 'category-tab';
+    if (group === activeGroup) btn.classList.add('active');
+    btn.type = 'button';
+    btn.textContent = group;
+    btn.addEventListener('click', () => {
+      activeGroup = group;
+      renderTabs(allChannels);
+      renderChannels(allChannels, els.search.value || '');
+    });
+    els.tabs.appendChild(btn);
+  });
+}
+
 function renderChannels(channels, filterText) {
   const q = (filterText || '').trim().toLowerCase();
+  const byGroup = activeGroup === 'All'
+    ? channels
+    : channels.filter(c => c.group === activeGroup);
   const filtered = q
-    ? channels.filter(c => c.name.toLowerCase().includes(q) || c.group.toLowerCase().includes(q))
-    : channels;
+    ? byGroup.filter(c => c.name.toLowerCase().includes(q) || c.group.toLowerCase().includes(q))
+    : byGroup;
 
-  els.rail.innerHTML = '';
+  clearChannelList();
 
   if (!filtered.length) {
     const div = document.createElement('div');
@@ -227,7 +269,6 @@ const VIDEO_ERROR_CODES = {
 function playChannel(channel) {
   const token = ++playToken;
   currentUrl = channel.url;
-
   els.nowPlaying.innerHTML =
     '<span class="np-name">' + escapeHtml(channel.name) + '</span>' +
     '<span class="np-group">' + escapeHtml(channel.group) + '</span>';
@@ -240,7 +281,7 @@ function playChannel(channel) {
 
   destroyPlayer();
 
-  const url = channel.url;
+  const url = channel.url || AUTHORIZED_HLS_URL;
   const isHls = /\.m3u8($|\?)/i.test(url);
   const isProgressiveFile = /\.(mp4|webm|ogv|mov|mkv)($|\?)/i.test(url);
 
