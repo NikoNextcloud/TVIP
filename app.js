@@ -389,9 +389,19 @@ function toggleFullscreen() {
     return;
   }
 
-  const request = els.playerFrame.requestFullscreen || els.playerFrame.webkitRequestFullscreen;
+  if (els.video.webkitEnterFullscreen) {
+    try {
+      els.video.webkitEnterFullscreen();
+      return;
+    } catch (e) {
+      // Fall through to standards-based fullscreen below.
+    }
+  }
+
+  const target = els.video.requestFullscreen ? els.video : els.playerFrame;
+  const request = target.requestFullscreen || target.webkitRequestFullscreen;
   if (request) {
-    const result = request.call(els.playerFrame);
+    const result = request.call(target);
     if (result && result.catch) result.catch(() => {});
   }
 }
