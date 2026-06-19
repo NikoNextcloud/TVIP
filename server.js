@@ -47,6 +47,11 @@ function rewritePlaylist(text, sourceUrl) {
   }).join('\n');
 }
 
+function findLocationText(text) {
+  const match = String(text || '').match(/(?:^|\n)\s*location:\s*(https?:\/\/[^\s\r\n]+)/i);
+  return match ? match[1] : null;
+}
+
 function handleProxy(req, res, requestUrl) {
   const target = requestUrl.searchParams.get('url');
   if (!target) return send(res, 400, 'Missing url');
@@ -105,7 +110,17 @@ function proxyRequest(target, res, redirectCount) {
     upstreamRes.on('data', (chunk) => chunks.push(chunk));
     upstreamRes.on('end', () => {
       const text = Buffer.concat(chunks).toString('utf8');
-      send(res, upstreamRes.statusCode || 200, rewritePlaylist(text, parsed.toString()), {
+
+      const locationText = findLocationText(text);
+      if (locationText) {
+        proxyRequest(locationText, res, redirectCount + 1);
+        return;
+      }
+
+      const rewritten = rewritePlaylist(text, parsed.toString());
+      const statusCode = rewritten.includes('#EXTM3U') ? 200 : (upstreamRes.statusCode || 200);
+
+      send(res, statusCode, rewritten, {
         'Content-Type': 'application/vnd.apple.mpegurl; charset=utf-8',
         'Cache-Control': 'no-store',
       });
