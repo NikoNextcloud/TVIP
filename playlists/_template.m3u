@@ -1,0 +1,7 @@
+#EXTM3U
+# Това е шаблон за допълнителен плейлист.
+# Копирай този файл, преименувай го (напр. sport.m3u), попълни канали,
+# и добави запис в playlists.json в основната папка.
+#
+# #EXTINF:-1 tvg-logo="https://example.com/logo.png" group-title="Категория",Име на канала
+# https://example.com/stream.m3u8

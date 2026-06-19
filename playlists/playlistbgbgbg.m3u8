@@ -1,0 +1,146 @@
+#EXTGRP:Bulgaria
+#EXTINF:0 tvg-id="XBNT.bg" tvg-name="БНТ1" tvg-logo="https://pptt.fun/epglogo/1912.png?v=3", БНТ1
+http://bde.online24.pm/play/6800/16419D145D0E706/video.m3u8
+#EXTINF:0 tvg-id="XBNT.2.bg" tvg-name="БНТ2" tvg-logo="https://pptt.fun/epglogo/1913.png?v=3", БНТ2
+#EXTGRP:Bulgaria
+http://bde.online24.pm/play/6801/16419D145D0E706/video.m3u8
+#EXTINF:0 tvg-id="XBNT.4.bg" tvg-name="БНТ3" tvg-logo="https://pptt.fun/epglogo/2458.png?v=3", БНТ3
+#EXTGRP:Bulgaria
+http://bde.online24.pm/play/6825/16419D145D0E706/video.m3u8
+#EXTINF:0 tvg-id="XBNT.4.bg" tvg-name="БНТ4" tvg-logo="https://pptt.fun/epglogo/1914.png?v=3", БНТ4
+#EXTGRP:Bulgaria
+http://bde.online24.pm/play/6802/16419D145D0E706/video.m3u8
+#EXTINF:0 tvg-id="XNova.TV.bg" tvg-name="Nova HD" tvg-logo="https://pptt.fun/epglogo/1915.png?v=3", Nova HD
+#EXTGRP:Bulgaria
+http://bde.online24.pm/play/6803/16419D145D0E706/video.m3u8
+#EXTINF:0 tvg-id="" tvg-name="ARTE" tvg-logo="https://pptt.fun/epglogo/nologo-2tv.png", ARTE
+#EXTGRP:Bulgaria
+http://bde.online24.pm/play/6604/16419D145D0E706/video.m3u8
+#EXTINF:0 tvg-id="" tvg-name="Rai 1 HD" tvg-logo="https://pptt.fun/epglogo/nologo-2tv.png", Rai 1 HD
+#EXTGRP:Bulgaria
+http://bde.online24.pm/play/6603/16419D145D0E706/video.m3u8
+#EXTINF:0 tvg-id="" tvg-name="Soul&Pepper TV HD" tvg-logo="https://pptt.fun/epglogo/nologo-2tv.png", Soul&Pepper TV HD
+#EXTGRP:Bulgaria
+http://bde.online24.pm/play/6601/16419D145D0E706/video.m3u8
+#EXTINF:0 tvg-id="" tvg-name="Wness TV HD" tvg-logo="https://pptt.fun/epglogo/nologo-2tv.png", Wness TV HD
+#EXTGRP:Bulgaria
+http://bde.online24.pm/play/6606/16419D145D0E706/video.m3u8
+#EXTINF:0 tvg-id="" tvg-name="FashionBox HD" tvg-logo="https://pptt.fun/epglogo/nologo-2tv.png", FashionBox HD
+#EXTGRP:Bulgaria
+http://bde.online24.pm/play/6605/16419D145D0E706/video.m3u8
+#EXTINF:0 tvg-id="" tvg-name="Kids Stars HD" tvg-logo="https://pptt.fun/epglogo/nologo-2tv.png", Kids Stars HD
+#EXTGRP:Bulgaria
+http://bde.online24.pm/play/6602/16419D145D0E706/video.m3u8
+#EXTINF:0 tvg-id="XbTV.bg" tvg-name="bTV" tvg-logo="https://pptt.fun/epglogo/1916.png?v=3", bTV
+#EXTGRP:Bulgaria
+http://bde.online24.pm/play/6804/16419D145D0E706/video.m3u8
+#EXTINF:0 tvg-id="XKinoNova.bg" tvg-name="Kino Nova HD" tvg-logo="https://pptt.fun/epglogo/2465.png?v=3", Kino Nova HD
+#EXTGRP:Bulgaria
+http://bde.online24.pm/play/6807/16419D145D0E706/video.m3u8
+#EXTINF:0 tvg-id="XDiema.bg" tvg-name="Diema" tvg-logo="https://pptt.fun/epglogo/1918.png?v=3", Diema
+#EXTGRP:Bulgaria
+http://bde.online24.pm/play/6808/16419D145D0E706/video.m3u8
+#EXTINF:0 tvg-id="XDiema.Family.bg" tvg-name="Diema Family HD" tvg-logo="https://pptt.fun/epglogo/2466.png?v=3", Diema Family HD
+#EXTGRP:Bulgaria
+http://bde.online24.pm/play/6809/16419D145D0E706/video.m3u8
+#EXTINF:0 tvg-id="XbTV.Action.bg" tvg-name="bTV Action" tvg-logo="https://pptt.fun/epglogo/1919.png?v=3", bTV Action
+#EXTGRP:Bulgaria
+http://bde.online24.pm/play/6810/16419D145D0E706/video.m3u8
+#EXTINF:0 tvg-id="XbTV.Cinema.bg" tvg-name="bTV Cinema" tvg-logo="https://pptt.fun/epglogo/1921.png?v=3", bTV Cinema
+#EXTGRP:Bulgaria
+http://bde.online24.pm/play/6812/16419D145D0E706/video.m3u8
+#EXTINF:0 tvg-id="XbTV.Comedy.bg" tvg-name="bTV Comedy" tvg-logo="https://pptt.fun/epglogo/1920.png?v=3", bTV Comedy
+#EXTGRP:Bulgaria
+http://bde.online24.pm/play/6811/16419D145D0E706/video.m3u8
+#EXTINF:0 tvg-id="XNational.Geographic.bg" tvg-name="National Geographic" tvg-logo="https://pptt.fun/epglogo/1928.png?v=3", National Geographic
+#EXTGRP:Bulgaria
+http://bde.online24.pm/play/6820/16419D145D0E706/video.m3u8
+#EXTINF:0 tvg-id="XNat.Geo.Wild.bg" tvg-name="Nat Geo Wild" tvg-logo="https://pptt.fun/epglogo/1929.png?v=3", Nat Geo Wild
+#EXTGRP:Bulgaria
+http://bde.online24.pm/play/6821/16419D145D0E706/video.m3u8
+#EXTINF:0 tvg-id="" tvg-name="The Fishing&Hunting Channel HD" tvg-logo="https://pptt.fun/epglogo/1931.png?v=3", The Fishing&Hunting Channel HD
+#EXTGRP:Bulgaria
+http://bde.online24.pm/play/6894/16419D145D0E706/video.m3u8
+#EXTINF:0 tvg-id="" tvg-name="This is Bulgaria" tvg-logo="https://pptt.fun/epglogo/1930.png?v=3", This is Bulgaria
+#EXTGRP:Bulgaria
+http://bde.online24.pm/play/6823/16419D145D0E706/video.m3u8
+#EXTINF:0 tvg-id="XNova.Sport.bg" tvg-name="Nova Sport" tvg-logo="https://pptt.fun/epglogo/1933.png?v=3", Nova Sport
+#EXTGRP:Bulgaria
+http://bde.online24.pm/play/6827/16419D145D0E706/video.m3u8
+#EXTINF:0 tvg-id="XDIEMA.SPORT.bg" tvg-name="Diema Sport" tvg-logo="https://pptt.fun/epglogo/1935.png?v=3", Diema Sport
+#EXTGRP:Bulgaria
+http://bde.online24.pm/play/6830/16419D145D0E706/video.m3u8
+#EXTINF:0 tvg-id="XDIEMA.SPORT.2.bg" tvg-name="Diema Sport 2" tvg-logo="https://pptt.fun/epglogo/1936.png?v=3", Diema Sport 2
+#EXTGRP:Bulgaria
+http://bde.online24.pm/play/6831/16419D145D0E706/video.m3u8
+#EXTINF:0 tvg-id="XDIEMA.SPORT.3.bg" tvg-name="Diema Sport 3" tvg-logo="https://pptt.fun/epglogo/1938.png?v=3", Diema Sport 3
+#EXTGRP:Bulgaria
+http://bde.online24.pm/play/6832/16419D145D0E706/video.m3u8
+#EXTINF:0 tvg-id="XMax.Sport.1.bg" tvg-name="Max Sport 1 HD" tvg-logo="https://pptt.fun/epglogo/1939.png?v=3", Max Sport 1 HD
+#EXTGRP:Bulgaria
+http://bde.online24.pm/play/6875/16419D145D0E706/video.m3u8
+#EXTINF:0 tvg-id="XMax.Sport.2.bg" tvg-name="Max Sport 2 HD" tvg-logo="https://pptt.fun/epglogo/1940.png?v=3", Max Sport 2 HD
+#EXTGRP:Bulgaria
+http://bde.online24.pm/play/6876/16419D145D0E706/video.m3u8
+#EXTINF:0 tvg-id="XMax.Sport.3.bg" tvg-name="Max Sport 3 HD" tvg-logo="https://pptt.fun/epglogo/1941.png?v=3", Max Sport 3 HD
+#EXTGRP:Bulgaria
+http://bde.online24.pm/play/6877/16419D145D0E706/video.m3u8
+#EXTINF:0 tvg-id="XMax.Sport.4.bg" tvg-name="Max Sport 4 HD" tvg-logo="https://pptt.fun/epglogo/1942.png?v=3", Max Sport 4 HD
+#EXTGRP:Bulgaria
+http://bde.online24.pm/play/6878/16419D145D0E706/video.m3u8
+#EXTINF:0 tvg-id="XNickelodeon.bg" tvg-name="Nickelodeon" tvg-logo="https://pptt.fun/epglogo/1943.png?v=3", Nickelodeon
+#EXTGRP:Bulgaria
+http://bde.online24.pm/play/6833/16419D145D0E706/video.m3u8
+#EXTINF:0 tvg-id="XNick.Jr.bg" tvg-name="Nick Jr" tvg-logo="https://pptt.fun/epglogo/1944.png?v=3", Nick Jr
+#EXTGRP:Bulgaria
+http://bde.online24.pm/play/6834/16419D145D0E706/video.m3u8
+#EXTINF:0 tvg-id="" tvg-name="CNN" tvg-logo="https://pptt.fun/epglogo/1948.png?v=3", CNN
+#EXTGRP:Bulgaria
+http://bde.online24.pm/play/6839/16419D145D0E706/video.m3u8
+#EXTINF:0 tvg-id="X24.Kitchen.bg" tvg-name="24 Kitchen" tvg-logo="https://pptt.fun/epglogo/1949.png?v=3", 24 Kitchen
+#EXTGRP:Bulgaria
+http://bde.online24.pm/play/6841/16419D145D0E706/video.m3u8
+#EXTINF:0 tvg-id="" tvg-name="Euronews Bulgaria" tvg-logo="https://pptt.fun/epglogo/1950.png?v=3", Euronews Bulgaria
+#EXTGRP:Bulgaria
+http://bde.online24.pm/play/6842/16419D145D0E706/video.m3u8
+#EXTINF:0 tvg-id="XBulgaria.ON.AIR.bg" tvg-name="BG on AIR" tvg-logo="https://pptt.fun/epglogo/1951.png?v=3", BG on AIR
+#EXTGRP:Bulgaria
+http://bde.online24.pm/play/6843/16419D145D0E706/video.m3u8
+#EXTINF:0 tvg-id="Xskat.bg" tvg-name="ТВ Скат" tvg-logo="https://pptt.fun/epglogo/1952.png?v=3", ТВ Скат
+#EXTGRP:Bulgaria
+http://bde.online24.pm/play/6845/16419D145D0E706/video.m3u8
+#EXTINF:0 tvg-id="Xcodefashion.bg" tvg-name="CodeFashion HD" tvg-logo="https://pptt.fun/epglogo/1953.png?v=3", CodeFashion HD
+#EXTGRP:Bulgaria
+http://bde.online24.pm/play/6850/16419D145D0E706/video.m3u8
+#EXTINF:0 tvg-id="XPlaneta.bg" tvg-name="Планета HD BG" tvg-logo="https://pptt.fun/epglogo/1954.png?v=3", Планета HD BG
+#EXTGRP:Bulgaria
+http://bde.online24.pm/play/6853/16419D145D0E706/video.m3u8
+#EXTINF:0 tvg-id="" tvg-name="Планета Фолк" tvg-logo="https://pptt.fun/epglogo/1955.png?v=3", Планета Фолк
+#EXTGRP:Bulgaria
+http://bde.online24.pm/play/6854/16419D145D0E706/video.m3u8
+#EXTINF:0 tvg-id="" tvg-name="FEN HD" tvg-logo="https://pptt.fun/epglogo/2467.png?v=3", FEN HD
+#EXTGRP:Bulgaria
+http://bde.online24.pm/play/6855/16419D145D0E706/video.m3u8
+#EXTINF:0 tvg-id="" tvg-name="Тянков Ориент" tvg-logo="https://pptt.fun/epglogo/1957.png?v=3", Тянков Ориент
+#EXTGRP:Bulgaria
+http://bde.online24.pm/play/6856/16419D145D0E706/video.m3u8
+#EXTINF:0 tvg-id="" tvg-name="Балканика" tvg-logo="https://pptt.fun/epglogo/1958.png?v=3", Балканика
+#EXTGRP:Bulgaria
+http://bde.online24.pm/play/6858/16419D145D0E706/video.m3u8
+#EXTINF:0 tvg-id="" tvg-name="Родина ТВ" tvg-logo="https://pptt.fun/epglogo/1959.png?v=3", Родина ТВ
+#EXTGRP:Bulgaria
+http://bde.online24.pm/play/6859/16419D145D0E706/video.m3u8
+#EXTINF:0 tvg-id="" tvg-name="Фен Фолк" tvg-logo="https://pptt.fun/epglogo/1960.png?v=3", Фен Фолк
+#EXTGRP:Bulgaria
+http://bde.online24.pm/play/6860/16419D145D0E706/video.m3u8
+#EXTINF:0 tvg-id="" tvg-name="DSTV" tvg-logo="https://pptt.fun/epglogo/1961.png?v=3", DSTV
+#EXTGRP:Bulgaria
+http://bde.online24.pm/play/6863/16419D145D0E706/video.m3u8
+#EXTINF:0 tvg-id="" tvg-name="BOX TV" tvg-logo="https://pptt.fun/epglogo/1962.png?v=3", BOX TV
+#EXTGRP:Bulgaria
+http://bde.online24.pm/play/6864/16419D145D0E706/video.m3u8
+#EXTINF:0 tvg-id="" tvg-name="Magic TV" tvg-logo="https://pptt.fun/epglogo/1963.png?v=3", Magic TV
+#EXTGRP:Bulgaria
+http://bde.online24.pm/play/6865/16419D145D0E706/video.m3u8
+#EXTINF:0 tvg-id="Xlove-nature-4k" tvg-name="Love Nature HD" tvg-logo="https://pptt.fun/epglogo/2468.png?v=3", Love Nature HD
+#EXTGRP:Bulgaria
