@@ -13,10 +13,15 @@ const els = {
   playlistSelect: document.getElementById('playlistSelect'),
   search: document.getElementById('searchInput'),
   video: document.getElementById('video'),
+  playerFrame: document.getElementById('playerFrame'),
   noSignal: document.getElementById('noSignal'),
   liveTag: document.getElementById('liveTag'),
   playerError: document.getElementById('playerError'),
   nowPlaying: document.getElementById('nowPlaying'),
+  volumeDownBtn: document.getElementById('volumeDownBtn'),
+  volumeUpBtn: document.getElementById('volumeUpBtn'),
+  volumeValue: document.getElementById('volumeValue'),
+  fullscreenBtn: document.getElementById('fullscreenBtn'),
   loadUrlBtn: document.getElementById('loadUrlBtn'),
   loadFileBtn: document.getElementById('loadFileBtn'),
   filePicker: document.getElementById('filePicker'),
@@ -360,6 +365,42 @@ function showPlayerError(msg) {
   els.playerError.textContent = msg;
 }
 
+function setVolume(value) {
+  const safeValue = Number.isFinite(value) ? value : 0.8;
+  const next = Math.max(0, Math.min(1, safeValue));
+  els.video.volume = next;
+  els.video.muted = next === 0;
+  els.volumeValue.textContent = Math.round(next * 100) + '%';
+  localStorage.setItem('eter:volume', String(next));
+}
+
+function changeVolume(delta) {
+  setVolume(els.video.volume + delta);
+}
+
+function toggleFullscreen() {
+  const activeElement = document.fullscreenElement || document.webkitFullscreenElement;
+  if (activeElement) {
+    const exit = document.exitFullscreen || document.webkitExitFullscreen;
+    if (exit) {
+      const result = exit.call(document);
+      if (result && result.catch) result.catch(() => {});
+    }
+    return;
+  }
+
+  const request = els.playerFrame.requestFullscreen || els.playerFrame.webkitRequestFullscreen;
+  if (request) {
+    const result = request.call(els.playerFrame);
+    if (result && result.catch) result.catch(() => {});
+  }
+}
+
+function syncFullscreenButton() {
+  const activeElement = document.fullscreenElement || document.webkitFullscreenElement;
+  els.fullscreenBtn.textContent = activeElement ? 'EXIT' : 'FULL';
+}
+
 function makePlaybackUrl(url) {
   const needsProxy = location.protocol === 'https:' && /^http:\/\//i.test(url);
   return needsProxy ? '/proxy?url=' + encodeURIComponent(url) : url;
@@ -393,6 +434,13 @@ els.filePicker.addEventListener('change', (e) => {
   if (file) loadPlaylistFromFileObject(file);
 });
 
+els.volumeDownBtn.addEventListener('click', () => changeVolume(-0.1));
+els.volumeUpBtn.addEventListener('click', () => changeVolume(0.1));
+els.fullscreenBtn.addEventListener('click', toggleFullscreen);
+document.addEventListener('fullscreenchange', syncFullscreenButton);
+document.addEventListener('webkitfullscreenchange', syncFullscreenButton);
+
 /* ---------------- Init ---------------- */
 
+setVolume(Number(localStorage.getItem('eter:volume') || 0.8));
 loadPlaylistsConfig();
