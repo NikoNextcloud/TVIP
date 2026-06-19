@@ -1,0 +1,390 @@
+{
+  "generatedAt": "2026-06-19T00:00:00.000Z",
+  "source": "playlists",
+  "channels": [
+    {
+      "id": "playlistbgbgbg-1-bnt1",
+      "title": "БНТ1",
+      "group": "Bulgaria",
+      "logo": "https://pptt.fun/epglogo/1912.png?v=3",
+      "url": "http://bde.online24.pm/play/6800/16419D145D0E706/video.m3u8",
+      "playlist": "playlistbgbgbg"
+    },
+    {
+      "id": "playlistbgbgbg-2-bnt2",
+      "title": "БНТ2",
+      "group": "Bulgaria",
+      "logo": "https://pptt.fun/epglogo/1913.png?v=3",
+      "url": "http://bde.online24.pm/play/6801/16419D145D0E706/video.m3u8",
+      "playlist": "playlistbgbgbg"
+    },
+    {
+      "id": "playlistbgbgbg-3-bnt3",
+      "title": "БНТ3",
+      "group": "Bulgaria",
+      "logo": "https://pptt.fun/epglogo/2458.png?v=3",
+      "url": "http://bde.online24.pm/play/6825/16419D145D0E706/video.m3u8",
+      "playlist": "playlistbgbgbg"
+    },
+    {
+      "id": "playlistbgbgbg-4-bnt4",
+      "title": "БНТ4",
+      "group": "Bulgaria",
+      "logo": "https://pptt.fun/epglogo/1914.png?v=3",
+      "url": "http://bde.online24.pm/play/6802/16419D145D0E706/video.m3u8",
+      "playlist": "playlistbgbgbg"
+    },
+    {
+      "id": "playlistbgbgbg-5-nova-hd",
+      "title": "Nova HD",
+      "group": "Bulgaria",
+      "logo": "https://pptt.fun/epglogo/1915.png?v=3",
+      "url": "http://bde.online24.pm/play/6803/16419D145D0E706/video.m3u8",
+      "playlist": "playlistbgbgbg"
+    },
+    {
+      "id": "playlistbgbgbg-6-arte",
+      "title": "ARTE",
+      "group": "Bulgaria",
+      "logo": "https://pptt.fun/epglogo/nologo-2tv.png",
+      "url": "http://bde.online24.pm/play/6604/16419D145D0E706/video.m3u8",
+      "playlist": "playlistbgbgbg"
+    },
+    {
+      "id": "playlistbgbgbg-7-rai-1-hd",
+      "title": "Rai 1 HD",
+      "group": "Bulgaria",
+      "logo": "https://pptt.fun/epglogo/nologo-2tv.png",
+      "url": "http://bde.online24.pm/play/6603/16419D145D0E706/video.m3u8",
+      "playlist": "playlistbgbgbg"
+    },
+    {
+      "id": "playlistbgbgbg-8-soul-pepper-tv-hd",
+      "title": "Soul&Pepper TV HD",
+      "group": "Bulgaria",
+      "logo": "https://pptt.fun/epglogo/nologo-2tv.png",
+      "url": "http://bde.online24.pm/play/6601/16419D145D0E706/video.m3u8",
+      "playlist": "playlistbgbgbg"
+    },
+    {
+      "id": "playlistbgbgbg-9-wness-tv-hd",
+      "title": "Wness TV HD",
+      "group": "Bulgaria",
+      "logo": "https://pptt.fun/epglogo/nologo-2tv.png",
+      "url": "http://bde.online24.pm/play/6606/16419D145D0E706/video.m3u8",
+      "playlist": "playlistbgbgbg"
+    },
+    {
+      "id": "playlistbgbgbg-10-fashionbox-hd",
+      "title": "FashionBox HD",
+      "group": "Bulgaria",
+      "logo": "https://pptt.fun/epglogo/nologo-2tv.png",
+      "url": "http://bde.online24.pm/play/6605/16419D145D0E706/video.m3u8",
+      "playlist": "playlistbgbgbg"
+    },
+    {
+      "id": "playlistbgbgbg-11-kids-stars-hd",
+      "title": "Kids Stars HD",
+      "group": "Bulgaria",
+      "logo": "https://pptt.fun/epglogo/nologo-2tv.png",
+      "url": "http://bde.online24.pm/play/6602/16419D145D0E706/video.m3u8",
+      "playlist": "playlistbgbgbg"
+    },
+    {
+      "id": "playlistbgbgbg-12-btv",
+      "title": "bTV",
+      "group": "Bulgaria",
+      "logo": "https://pptt.fun/epglogo/1916.png?v=3",
+      "url": "http://bde.online24.pm/play/6804/16419D145D0E706/video.m3u8",
+      "playlist": "playlistbgbgbg"
+    },
+    {
+      "id": "playlistbgbgbg-13-kino-nova-hd",
+      "title": "Kino Nova HD",
+      "group": "Bulgaria",
+      "logo": "https://pptt.fun/epglogo/2465.png?v=3",
+      "url": "http://bde.online24.pm/play/6807/16419D145D0E706/video.m3u8",
+      "playlist": "playlistbgbgbg"
+    },
+    {
+      "id": "playlistbgbgbg-14-diema",
+      "title": "Diema",
+      "group": "Bulgaria",
+      "logo": "https://pptt.fun/epglogo/1918.png?v=3",
+      "url": "http://bde.online24.pm/play/6808/16419D145D0E706/video.m3u8",
+      "playlist": "playlistbgbgbg"
+    },
+    {
+      "id": "playlistbgbgbg-15-diema-family-hd",
+      "title": "Diema Family HD",
+      "group": "Bulgaria",
+      "logo": "https://pptt.fun/epglogo/2466.png?v=3",
+      "url": "http://bde.online24.pm/play/6809/16419D145D0E706/video.m3u8",
+      "playlist": "playlistbgbgbg"
+    },
+    {
+      "id": "playlistbgbgbg-16-btv-action",
+      "title": "bTV Action",
+      "group": "Bulgaria",
+      "logo": "https://pptt.fun/epglogo/1919.png?v=3",
+      "url": "http://bde.online24.pm/play/6810/16419D145D0E706/video.m3u8",
+      "playlist": "playlistbgbgbg"
+    },
+    {
+      "id": "playlistbgbgbg-17-btv-cinema",
+      "title": "bTV Cinema",
+      "group": "Bulgaria",
+      "logo": "https://pptt.fun/epglogo/1921.png?v=3",
+      "url": "http://bde.online24.pm/play/6812/16419D145D0E706/video.m3u8",
+      "playlist": "playlistbgbgbg"
+    },
+    {
+      "id": "playlistbgbgbg-18-btv-comedy",
+      "title": "bTV Comedy",
+      "group": "Bulgaria",
+      "logo": "https://pptt.fun/epglogo/1920.png?v=3",
+      "url": "http://bde.online24.pm/play/6811/16419D145D0E706/video.m3u8",
+      "playlist": "playlistbgbgbg"
+    },
+    {
+      "id": "playlistbgbgbg-19-national-geographic",
+      "title": "National Geographic",
+      "group": "Bulgaria",
+      "logo": "https://pptt.fun/epglogo/1928.png?v=3",
+      "url": "http://bde.online24.pm/play/6820/16419D145D0E706/video.m3u8",
+      "playlist": "playlistbgbgbg"
+    },
+    {
+      "id": "playlistbgbgbg-20-nat-geo-wild",
+      "title": "Nat Geo Wild",
+      "group": "Bulgaria",
+      "logo": "https://pptt.fun/epglogo/1929.png?v=3",
+      "url": "http://bde.online24.pm/play/6821/16419D145D0E706/video.m3u8",
+      "playlist": "playlistbgbgbg"
+    },
+    {
+      "id": "playlistbgbgbg-21-the-fishing-hunting-channel-hd",
+      "title": "The Fishing&Hunting Channel HD",
+      "group": "Bulgaria",
+      "logo": "https://pptt.fun/epglogo/1931.png?v=3",
+      "url": "http://bde.online24.pm/play/6894/16419D145D0E706/video.m3u8",
+      "playlist": "playlistbgbgbg"
+    },
+    {
+      "id": "playlistbgbgbg-22-this-is-bulgaria",
+      "title": "This is Bulgaria",
+      "group": "Bulgaria",
+      "logo": "https://pptt.fun/epglogo/1930.png?v=3",
+      "url": "http://bde.online24.pm/play/6823/16419D145D0E706/video.m3u8",
+      "playlist": "playlistbgbgbg"
+    },
+    {
+      "id": "playlistbgbgbg-23-nova-sport",
+      "title": "Nova Sport",
+      "group": "Bulgaria",
+      "logo": "https://pptt.fun/epglogo/1933.png?v=3",
+      "url": "http://bde.online24.pm/play/6827/16419D145D0E706/video.m3u8",
+      "playlist": "playlistbgbgbg"
+    },
+    {
+      "id": "playlistbgbgbg-24-diema-sport",
+      "title": "Diema Sport",
+      "group": "Bulgaria",
+      "logo": "https://pptt.fun/epglogo/1935.png?v=3",
+      "url": "http://bde.online24.pm/play/6830/16419D145D0E706/video.m3u8",
+      "playlist": "playlistbgbgbg"
+    },
+    {
+      "id": "playlistbgbgbg-25-diema-sport-2",
+      "title": "Diema Sport 2",
+      "group": "Bulgaria",
+      "logo": "https://pptt.fun/epglogo/1936.png?v=3",
+      "url": "http://bde.online24.pm/play/6831/16419D145D0E706/video.m3u8",
+      "playlist": "playlistbgbgbg"
+    },
+    {
+      "id": "playlistbgbgbg-26-diema-sport-3",
+      "title": "Diema Sport 3",
+      "group": "Bulgaria",
+      "logo": "https://pptt.fun/epglogo/1938.png?v=3",
+      "url": "http://bde.online24.pm/play/6832/16419D145D0E706/video.m3u8",
+      "playlist": "playlistbgbgbg"
+    },
+    {
+      "id": "playlistbgbgbg-27-max-sport-1-hd",
+      "title": "Max Sport 1 HD",
+      "group": "Bulgaria",
+      "logo": "https://pptt.fun/epglogo/1939.png?v=3",
+      "url": "http://bde.online24.pm/play/6875/16419D145D0E706/video.m3u8",
+      "playlist": "playlistbgbgbg"
+    },
+    {
+      "id": "playlistbgbgbg-28-max-sport-2-hd",
+      "title": "Max Sport 2 HD",
+      "group": "Bulgaria",
+      "logo": "https://pptt.fun/epglogo/1940.png?v=3",
+      "url": "http://bde.online24.pm/play/6876/16419D145D0E706/video.m3u8",
+      "playlist": "playlistbgbgbg"
+    },
+    {
+      "id": "playlistbgbgbg-29-max-sport-3-hd",
+      "title": "Max Sport 3 HD",
+      "group": "Bulgaria",
+      "logo": "https://pptt.fun/epglogo/1941.png?v=3",
+      "url": "http://bde.online24.pm/play/6877/16419D145D0E706/video.m3u8",
+      "playlist": "playlistbgbgbg"
+    },
+    {
+      "id": "playlistbgbgbg-30-max-sport-4-hd",
+      "title": "Max Sport 4 HD",
+      "group": "Bulgaria",
+      "logo": "https://pptt.fun/epglogo/1942.png?v=3",
+      "url": "http://bde.online24.pm/play/6878/16419D145D0E706/video.m3u8",
+      "playlist": "playlistbgbgbg"
+    },
+    {
+      "id": "playlistbgbgbg-31-nickelodeon",
+      "title": "Nickelodeon",
+      "group": "Bulgaria",
+      "logo": "https://pptt.fun/epglogo/1943.png?v=3",
+      "url": "http://bde.online24.pm/play/6833/16419D145D0E706/video.m3u8",
+      "playlist": "playlistbgbgbg"
+    },
+    {
+      "id": "playlistbgbgbg-32-nick-jr",
+      "title": "Nick Jr",
+      "group": "Bulgaria",
+      "logo": "https://pptt.fun/epglogo/1944.png?v=3",
+      "url": "http://bde.online24.pm/play/6834/16419D145D0E706/video.m3u8",
+      "playlist": "playlistbgbgbg"
+    },
+    {
+      "id": "playlistbgbgbg-33-cnn",
+      "title": "CNN",
+      "group": "Bulgaria",
+      "logo": "https://pptt.fun/epglogo/1948.png?v=3",
+      "url": "http://bde.online24.pm/play/6839/16419D145D0E706/video.m3u8",
+      "playlist": "playlistbgbgbg"
+    },
+    {
+      "id": "playlistbgbgbg-34-24-kitchen",
+      "title": "24 Kitchen",
+      "group": "Bulgaria",
+      "logo": "https://pptt.fun/epglogo/1949.png?v=3",
+      "url": "http://bde.online24.pm/play/6841/16419D145D0E706/video.m3u8",
+      "playlist": "playlistbgbgbg"
+    },
+    {
+      "id": "playlistbgbgbg-35-euronews-bulgaria",
+      "title": "Euronews Bulgaria",
+      "group": "Bulgaria",
+      "logo": "https://pptt.fun/epglogo/1950.png?v=3",
+      "url": "http://bde.online24.pm/play/6842/16419D145D0E706/video.m3u8",
+      "playlist": "playlistbgbgbg"
+    },
+    {
+      "id": "playlistbgbgbg-36-bg-on-air",
+      "title": "BG on AIR",
+      "group": "Bulgaria",
+      "logo": "https://pptt.fun/epglogo/1951.png?v=3",
+      "url": "http://bde.online24.pm/play/6843/16419D145D0E706/video.m3u8",
+      "playlist": "playlistbgbgbg"
+    },
+    {
+      "id": "playlistbgbgbg-37-tv-skat",
+      "title": "ТВ Скат",
+      "group": "Bulgaria",
+      "logo": "https://pptt.fun/epglogo/1952.png?v=3",
+      "url": "http://bde.online24.pm/play/6845/16419D145D0E706/video.m3u8",
+      "playlist": "playlistbgbgbg"
+    },
+    {
+      "id": "playlistbgbgbg-38-codefashion-hd",
+      "title": "CodeFashion HD",
+      "group": "Bulgaria",
+      "logo": "https://pptt.fun/epglogo/1953.png?v=3",
+      "url": "http://bde.online24.pm/play/6850/16419D145D0E706/video.m3u8",
+      "playlist": "playlistbgbgbg"
+    },
+    {
+      "id": "playlistbgbgbg-39-planeta-hd-bg",
+      "title": "Планета HD BG",
+      "group": "Bulgaria",
+      "logo": "https://pptt.fun/epglogo/1954.png?v=3",
+      "url": "http://bde.online24.pm/play/6853/16419D145D0E706/video.m3u8",
+      "playlist": "playlistbgbgbg"
+    },
+    {
+      "id": "playlistbgbgbg-40-planeta-folk",
+      "title": "Планета Фолк",
+      "group": "Bulgaria",
+      "logo": "https://pptt.fun/epglogo/1955.png?v=3",
+      "url": "http://bde.online24.pm/play/6854/16419D145D0E706/video.m3u8",
+      "playlist": "playlistbgbgbg"
+    },
+    {
+      "id": "playlistbgbgbg-41-fen-hd",
+      "title": "FEN HD",
+      "group": "Bulgaria",
+      "logo": "https://pptt.fun/epglogo/2467.png?v=3",
+      "url": "http://bde.online24.pm/play/6855/16419D145D0E706/video.m3u8",
+      "playlist": "playlistbgbgbg"
+    },
+    {
+      "id": "playlistbgbgbg-42-tyankov-orient",
+      "title": "Тянков Ориент",
+      "group": "Bulgaria",
+      "logo": "https://pptt.fun/epglogo/1957.png?v=3",
+      "url": "http://bde.online24.pm/play/6856/16419D145D0E706/video.m3u8",
+      "playlist": "playlistbgbgbg"
+    },
+    {
+      "id": "playlistbgbgbg-43-balkanika",
+      "title": "Балканика",
+      "group": "Bulgaria",
+      "logo": "https://pptt.fun/epglogo/1958.png?v=3",
+      "url": "http://bde.online24.pm/play/6858/16419D145D0E706/video.m3u8",
+      "playlist": "playlistbgbgbg"
+    },
+    {
+      "id": "playlistbgbgbg-44-rodina-tv",
+      "title": "Родина ТВ",
+      "group": "Bulgaria",
+      "logo": "https://pptt.fun/epglogo/1959.png?v=3",
+      "url": "http://bde.online24.pm/play/6859/16419D145D0E706/video.m3u8",
+      "playlist": "playlistbgbgbg"
+    },
+    {
+      "id": "playlistbgbgbg-45-fen-folk",
+      "title": "Фен Фолк",
+      "group": "Bulgaria",
+      "logo": "https://pptt.fun/epglogo/1960.png?v=3",
+      "url": "http://bde.online24.pm/play/6860/16419D145D0E706/video.m3u8",
+      "playlist": "playlistbgbgbg"
+    },
+    {
+      "id": "playlistbgbgbg-46-dstv",
+      "title": "DSTV",
+      "group": "Bulgaria",
+      "logo": "https://pptt.fun/epglogo/1961.png?v=3",
+      "url": "http://bde.online24.pm/play/6863/16419D145D0E706/video.m3u8",
+      "playlist": "playlistbgbgbg"
+    },
+    {
+      "id": "playlistbgbgbg-47-box-tv",
+      "title": "BOX TV",
+      "group": "Bulgaria",
+      "logo": "https://pptt.fun/epglogo/1962.png?v=3",
+      "url": "http://bde.online24.pm/play/6864/16419D145D0E706/video.m3u8",
+      "playlist": "playlistbgbgbg"
+    },
+    {
+      "id": "playlistbgbgbg-48-magic-tv",
+      "title": "Magic TV",
+      "group": "Bulgaria",
+      "logo": "https://pptt.fun/epglogo/1963.png?v=3",
+      "url": "http://bde.online24.pm/play/6865/16419D145D0E706/video.m3u8",
+      "playlist": "playlistbgbgbg"
+    }
+  ]
+}

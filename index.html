@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ETER — твой плейлист, твой ефир</title>
+<meta name="description" content="Лек статичен IPTV плейър — зарежда канали от M3U плейлисти.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-dot" id="brandDot"></span>
+      <span class="brand-name">ETER</span>
+    </div>
+
+    <div class="topbar-controls">
+      <label class="field">
+        <span class="field-label">Плейлист</span>
+        <select id="playlistSelect"></select>
+      </label>
+
+      <label class="field field-search">
+        <span class="field-label">Търсене</span>
+        <input id="searchInput" type="text" placeholder="напр. bTV, спорт…" autocomplete="off">
+      </label>
+
+      <button class="btn-ghost" id="loadUrlBtn" title="Зареди M3U от линк">+ URL</button>
+      <button class="btn-ghost" id="loadFileBtn" title="Зареди M3U файл от компютъра">+ Файл</button>
+      <input type="file" id="filePicker" accept=".m3u,.m3u8,text/plain" hidden>
+    </div>
+  </header>
+
+  <div class="layout">
+
+    <aside class="channel-rail" id="channelRail">
+      <div class="rail-status" id="railStatus">Зареждане на плейлист…</div>
+    </aside>
+
+    <main class="stage">
+
+      <div class="player-frame" id="playerFrame">
+        <video id="video" playsinline></video>
+
+        <div class="no-signal" id="noSignal">
+          <div class="scanlines" aria-hidden="true"></div>
+          <div class="noise" aria-hidden="true"></div>
+          <div class="no-signal-text">
+            <span class="ns-title">NO SIGNAL</span>
+            <span class="ns-sub">избери канал отляво, за да започнеш</span>
+          </div>
+        </div>
+
+        <div class="live-tag" id="liveTag" hidden>
+          <span class="dot"></span> LIVE
+        </div>
+
+        <div class="player-error" id="playerError" hidden></div>
+      </div>
+
+      <div class="now-playing" id="nowPlaying">
+        <span class="np-name">—</span>
+        <span class="np-group"></span>
+      </div>
+
+    </main>
+  </div>
+
+  <footer class="foot">
+    Редактирай <code>playlist.m3u</code> (или добави нов в <code>playlists/</code> + запис в <code>playlists.json</code>), запази, push в GitHub — листата се обновява автоматично.
+  </footer>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/hls.js@1/dist/hls.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/mpegts.js@1/dist/mpegts.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
